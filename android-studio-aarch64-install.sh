@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# Changes 2026-11-06
+# Changes 2026-11-23
 #
-# - Updated to Android Studio `2026.2.2.9` (Rabbit 2 Patch 1, platform 262.10968.63), IntelliJ donor `2026.2.3`
+# - Updated to Android Studio `2026.2.2.10` (Rabbit 2 Patch 2, platform 262.10968.63), IntelliJ donor `2026.2.3`
 #   (exact platform build match), CLion `2026.2.3`, and Android NDK `r30` final (`30.0.16248370`).
 # - Replaced the trimmed IntelliJ runtime with the full ARM64 JetBrains Runtime SDK of the same build Android Studio
 #   bundles (`25.0.4+b508.27`). The IDEA runtime lacks `jdk.jlink`, `jdk.jartool` and `jdk.jdeps`, which broke AGP's
@@ -66,7 +66,7 @@ done
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local/share}" AS_ROOT_DIR="${AS_ROOT_DIR:-${INSTALL_DIR}/android-studio}"
 SDK_ROOT_DIR="${ANDROID_SDK_ROOT:-$HOME/Android/Sdk}" NDK_DIR="${NDK_DIR:-${SDK_ROOT_DIR}/ndk}" CACHE_DIR="${CACHE_DIR:-${XDG_CACHE_HOME:-$HOME/.cache}/androidstudio-installer}"
 LAYOUTLIB_SOURCE_DIR="${LAYOUTLIB_SOURCE_DIR:-${SCRIPT_DIR}/lib}"
-AS_VERSION="2026.2.2.9" AS_ARCHIVE="android-studio-rabbit2-patch1-linux.tar.gz" AS_URL="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${AS_VERSION}/${AS_ARCHIVE}" AS_SHA256="11ecbf0e6dc0f04a1353f797e45bf239a3ff1a82221539b1b8cdd7eab0d8d8ea"
+AS_VERSION="2026.2.2.10" AS_ARCHIVE="android-studio-rabbit2-patch2-linux.tar.gz" AS_URL="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${AS_VERSION}/${AS_ARCHIVE}" AS_SHA256="0ca322d00c07d6f15703abd1b4ff79b9942a1b51f75a9703fc1d09e1cf249f45"
 IDEA_VERSION="2026.2.3" IDEA_ARCHIVE="idea-${IDEA_VERSION}-aarch64.tar.gz" IDEA_URL="https://download.jetbrains.com/idea/${IDEA_ARCHIVE}" IDEA_SHA256="873286dd6406971a2311827edd66c56060c345582a4a6b1774e3925183b02ec5"
 CLION_VERSION="2026.2.3" CLION_ARCHIVE="CLion-${CLION_VERSION}-aarch64.tar.gz" CLION_URL="https://download.jetbrains.com/cpp/${CLION_ARCHIVE}" CLION_SHA256="97db7e50101b63c64f81f8dcf80b14c4ace42cba697a6b091d9bb2237e22ceb0"
 # Full JBR SDK (includes jlink/jmod/jar/jdeps and jmods) matching the runtime build Android Studio bundles for x86_64.

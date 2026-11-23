@@ -84,7 +84,7 @@ CLion ARM64 archive and copies only its clang tooling into Android Studio's
 
 | Component | Version | Source |
 | --- | --- | --- |
-| Android Studio | 2026.2.2.9 (Rabbit 2 Patch 1, platform 262.10968.63) | Google |
+| Android Studio | 2026.2.2.10 (Rabbit 2 Patch 2, platform 262.10968.63) | Google |
 | IntelliJ IDEA (native donor) | 2026.2.3 (262.10968.63) | JetBrains |
 | JetBrains Runtime SDK | 25.0.4 b508.27 (same build Android Studio bundles) | JetBrains |
 | CLion (clangd donor) | 2026.2.3 | JetBrains |
